@@ -1,0 +1,23 @@
+@import url('https://font.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+:root{
+  --primary-color: #eb3b5a;
+  --white-color: #ffffff;
+  --light-color: #ced6e0;
+  --grey-color: #737181;
+  --dark-color: #202130;
+
+  --shadow: 0 10px 10px -8px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+*,::before,::after {
+  box-sizing: border-box;
+}
+
+body{
+  
+}

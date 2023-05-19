@@ -1,0 +1,137 @@
+@import url('https://font.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+:root{
+  --primary-color: #eb3b5a;
+  --white-color: #ffffff;
+  --light-color: #ced6e0;
+  --grey-color: #737181;
+  --dark-color: #202130;
+
+  --shadow: 0 10px 10px -8px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+*,::before,::after {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--dark-color);
+  background-color: #2f3640;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul{
+  list-style: none;
+}
+
+img{
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.site{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container{
+  max-width: 1024px;
+  padding: 0 2em;
+  margin: 0 auto;
+}
+
+.card{
+  max-width: 350px;
+  background-color: var(--white-color);
+  border-radius: 1em;
+  box-shadow: 0 0 0 10px rgb(255 255 255 /20%);
+  overflow: hidden;
+}
+
+.card header {
+  position: relative;
+  height: 225px;
+  padding-top: 3em;
+  margin-bottom: 2em;
+}
+
+.card header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(assets/image.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  z-index: 0;
+  filter: blur(40px);
+}
+
+.card header > * {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card header .meta {
+  text-align: center;
+  margin-top: 1em;
+  width: max-content;
+}
+
+.card header h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.card header h4 {
+  font-size: 0.813em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.card .thumbnail {
+  width: 100px;
+  height: 100px;
+}
+
+.card .thumbnail img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 10px 15px rgb(0 0 0 /20%);
+}
+
+.card section {
+  padding: 0 1.5em;
+}
+
+.card section h4 {
+  text-transform: uppercase;
+}
+
+.card .section-title {
+  font-size: 0.813em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+.card section p {
+  font-size: ;
+}
