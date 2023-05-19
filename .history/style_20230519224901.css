@@ -153,7 +153,7 @@ img{
 }
 
 .card .section-title {
-  font-size: 1em;
+  font-size: 0.813em;
   font-weight: 600;
   margin-bottom: 0.5em;
 }
@@ -218,7 +218,7 @@ img{
 
 .card footer nav a {
   position: relative;
-  font-size: 0.9em;
+  font-size: 0.813em;
   font-weight: 600;
   text-transform: uppercase;
   width: 100%;
@@ -304,7 +304,7 @@ section > div.active {
   left: 3px;
   writing-mode: vertical-lr;
   text-orientation: upright;
-  font-size: 1em;
+  font-size: 0.813em;
   font-weight: 600;
   color: var(--grey-color);
   letter-spacing: -8px;
@@ -418,17 +418,16 @@ section > div.active {
   left: 50%;
   transform: translateX(-50%);
   padding: 8px;
-  background-color: #f1f1f1;
-  color: #333;
+  background-color: #343a40;
+  color: #fff;
   border-radius: 4px;
   opacity: 0;
   transition: opacity 0.3s, transform 0.3s;
   transform-origin: bottom;
-  white-space: nowrap;
 }
 
 .tooltip:hover::after {
-  opacity: 1; 
+  opacity: 1;
   transform: translateX(-50%) scaleY(1);
 }
 

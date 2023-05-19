@@ -153,7 +153,7 @@ img{
 }
 
 .card .section-title {
-  font-size: 1em;
+  font-size: 0.813em;
   font-weight: 600;
   margin-bottom: 0.5em;
 }
@@ -218,7 +218,7 @@ img{
 
 .card footer nav a {
   position: relative;
-  font-size: 0.9em;
+  font-size: 0.813em;
   font-weight: 600;
   text-transform: uppercase;
   width: 100%;
@@ -304,7 +304,7 @@ section > div.active {
   left: 3px;
   writing-mode: vertical-lr;
   text-orientation: upright;
-  font-size: 1em;
+  font-size: 0.813em;
   font-weight: 600;
   color: var(--grey-color);
   letter-spacing: -8px;
@@ -406,50 +406,44 @@ section > div.active {
   color: var(--white-color);
 }
 
-/* CSS cho tooltip */
+/* CSS cho biểu tượng */
 .tooltip {
   position: relative;
 }
 
-.tooltip::after {
-  content: attr(data-tooltip);
+/* CSS cho tooltip */
+.tooltip:hover::after {
+  content: "Discord: Whitelily#0144";
   position: absolute;
-  top: calc(100% + 8px);
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
   padding: 8px;
   background-color: #f1f1f1;
   color: #333;
   border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   opacity: 0;
-  transition: opacity 0.3s, transform 0.3s;
-  transform-origin: bottom;
-  white-space: nowrap;
+  transition: opacity 0.3s;
 }
 
 .tooltip:hover::after {
-  opacity: 1; 
-  transform: translateX(-50%) scaleY(1);
+  opacity: 1;
 }
 
 /* CSS cho animation */
-@keyframes scaleDown {
-  0% {
-    transform: translateX(-50%) scaleY(0);
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  50% {
-    transform: translateX(-50%) scaleY(1.2);
-  }
-  100% {
-    transform: translateX(-50%) scaleY(1);
+  to {
+    opacity: 1;
   }
 }
 
 .tooltip:hover::after {
-  animation: scaleDown 0.3s ease;
+  animation: fadeIn 0.3s ease;
 }
-
-
 
 
 

@@ -165,7 +165,7 @@ img{
 }
 
 .card .socials ul {
-  display: flex;
+  display: ce;
   gap: 3em;
   justify-content: center;
 }
@@ -218,7 +218,7 @@ img{
 
 .card footer nav a {
   position: relative;
-  font-size: 0.9em;
+  font-size: 0.813em;
   font-weight: 600;
   text-transform: uppercase;
   width: 100%;
@@ -304,7 +304,7 @@ section > div.active {
   left: 3px;
   writing-mode: vertical-lr;
   text-orientation: upright;
-  font-size: 1em;
+  font-size: 0.813em;
   font-weight: 600;
   color: var(--grey-color);
   letter-spacing: -8px;
@@ -448,6 +448,7 @@ section > div.active {
 .tooltip:hover::after {
   animation: scaleDown 0.3s ease;
 }
+
 
 
 

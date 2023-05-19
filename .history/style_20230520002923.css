@@ -450,6 +450,29 @@ section > div.active {
 }
 
 
+.chat-bubble {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00aaff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  animation: moveBubble 4s infinite;
+}
+
+@keyframes moveBubble {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 
 
 

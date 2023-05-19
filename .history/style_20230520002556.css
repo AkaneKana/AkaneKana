@@ -62,6 +62,7 @@ img{
   border-radius: 1em;
   box-shadow: 0 0 0 10px rgb(255 255 255 /20%);
   overflow: hidden;
+  
 }
 
 .card header {
@@ -448,6 +449,7 @@ section > div.active {
 .tooltip:hover::after {
   animation: scaleDown 0.3s ease;
 }
+
 
 
 

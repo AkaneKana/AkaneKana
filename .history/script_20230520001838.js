@@ -1,6 +1,8 @@
 const trigger = document.querySelectorAll('nav a');
 const content = document.querySelectorAll('section > div');
 const card = document.querySelector('.card');
+const isDragging = false;
+const offset = { x: 0, y: 0 };
 
 const onShow = (e) => {
     const dataTarget = e.target.getAttribute('data');
@@ -17,4 +19,3 @@ const onShow = (e) => {
 trigger.forEach((button) => {
     button.addEventListener('click', onShow)
 })
-

@@ -17,4 +17,3 @@ const onShow = (e) => {
 trigger.forEach((button) => {
     button.addEventListener('click', onShow)
 })
-
