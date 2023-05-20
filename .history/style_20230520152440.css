@@ -29,7 +29,7 @@ body {
   background-image: url("assets/Sing.jpg"); /* Đường dẫn tới hình ảnh background */
   background-size: cover; /* Kích thước hình ảnh sẽ cover toàn bộ background */
   background-repeat: no-repeat; /* Không lặp lại hình ảnh */
-  background-position: center;
+  
 }
 
 a {
