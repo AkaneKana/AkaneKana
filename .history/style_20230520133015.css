@@ -164,7 +164,7 @@ img {
 .card section p {
   font-size: 0.813em;
   color: var(--grey-color);
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .card .socials ul {
@@ -182,8 +182,18 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: border 0.3s, color 0.3s, backgound-color 0.3s;
+  transition: border 0.3s, color 0.3s, background-color 0.3s;
 }
+
+.card .socials ul li a span {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 1; /* Thêm thuộc tính z-index với giá trị lớn hơn */
+}
+
 
 .card .socials ul li:nth-child(1) a {
   box-shadow: var(--shadow) #1877f2;
@@ -413,8 +423,8 @@ section > div.active {
   color: var(--white-color);
 }
 
-/* CSS cho tooltip */
-.tooltip {
+
+/* .tooltip {
   position: relative;
 }
 
@@ -439,7 +449,7 @@ section > div.active {
   transform: translateX(-50%) scaleY(1);
 }
 
-/* CSS cho animation */
+
 @keyframes scaleDown {
   0% {
     transform: translateX(-50%) scaleY(0);
@@ -454,50 +464,5 @@ section > div.active {
 
 .tooltip:hover::after {
   animation: scaleDown 0.3s ease;
-}
-
-/* .navigation {
-  position: fixed;
-  inset: 40px 0 40px 20px;
-  background: #fff;
-  width: 75px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-}
-
-.menu Toggle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 60px;
-  padding: 0 23px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  cursor: pointer;
-}
-
-.menuToggle::before {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 2px;
-  background: #333;
-  transform: translateY(-8px);
-  transition: 0.5s;
-}
-
-.menuToggle::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 2px;
-  background: #333;
-  transform: translateY(8px);
-  box-shadow: 0 -8px 0 #333;
-  transition: 0.5s;
 } */
+

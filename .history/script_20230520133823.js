@@ -19,12 +19,12 @@ trigger.forEach((button) => {
     button.addEventListener('click', onShow)
 })
 
-tooltipIcons.forEach(icon => {
-  icon.addEventListener('mouseover', () => {
-    icon.classList.add('show-tooltip');
-  });
-  icon.addEventListener('mouseout', () => {
-    icon.classList.remove('show-tooltip');
-  });
-});
+// tooltipIcons.forEach(icon => {
+//   icon.addEventListener('mouseover', () => {
+//     icon.classList.add('show-tooltip');
+//   });
+//   icon.addEventListener('mouseout', () => {
+//     icon.classList.remove('show-tooltip');
+//   });
+// });
 

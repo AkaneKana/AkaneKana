@@ -1,6 +1,8 @@
 const trigger = document.querySelectorAll('nav a');
 const content = document.querySelectorAll('section > div');
 const card = document.querySelector('.card');
+const menuToggle = document.querySelector('.menuToggle');
+const navigation = document.querySelector('.navigation');
 const tooltipIcons = document.querySelectorAll('.tooltip-icon');
 
 const onShow = (e) => {

@@ -117,7 +117,6 @@ img {
 .card header h3 {
   font-size: 1.4em;
   font-weight: 600;
-  margin-top: 30px;
 }
 
 .card header h4 {
@@ -238,13 +237,13 @@ img {
   left: 0;
   width: 33.3333%;
   height: 30px;
-  background: linear-gradient(135deg, #03001e, #7303c0, #ec38bc, #fdeff9);
+  background: linear-gradient(135deg, #03001e #7303c0 #ec38bc, #fdeff9);
   filter: blur(15px);
   transition: left 0.3s;
 }
 
 .card footer nav a.active {
-  color: var(--white-color);
+  color: var(--primary-color);
 }
 
 .card footer nav a.active:nth-child(2) ~ span {
@@ -456,7 +455,7 @@ section > div.active {
   animation: scaleDown 0.3s ease;
 }
 
-/* .navigation {
+.navigation {
   position: fixed;
   inset: 40px 0 40px 20px;
   background: #fff;
@@ -498,6 +497,6 @@ section > div.active {
   height: 2px;
   background: #333;
   transform: translateY(8px);
-  box-shadow: 0 -8px 0 #333;
+  box-shadow: ;
   transition: 0.5s;
-} */
+}

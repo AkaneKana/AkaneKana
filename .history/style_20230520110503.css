@@ -117,7 +117,7 @@ img {
 .card header h3 {
   font-size: 1.4em;
   font-weight: 600;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .card header h4 {
@@ -164,7 +164,7 @@ img {
 .card section p {
   font-size: 0.813em;
   color: var(--grey-color);
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .card .socials ul {
@@ -238,13 +238,13 @@ img {
   left: 0;
   width: 33.3333%;
   height: 30px;
-  background: linear-gradient(135deg, #03001e, #7303c0, #ec38bc, #fdeff9);
+  background: linear-gradient(135deg, #03001e #7303c0 #ec38bc, #fdeff9);
   filter: blur(15px);
   transition: left 0.3s;
 }
 
 .card footer nav a.active {
-  color: var(--white-color);
+  color: var(--primary-color);
 }
 
 .card footer nav a.active:nth-child(2) ~ span {
